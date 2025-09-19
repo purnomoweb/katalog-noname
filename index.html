@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO NAME - Jual Followers Likes Views Sosmed & App Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Dark Theme */
+        :root {
+            --color-bg: #111827;
+            --color-text-primary: #D1D5DB;
+            --color-text-secondary: #9CA3AF;
+            --color-text-header: #FFFFFF;
+            --color-card-bg: #1F2937;
+            --color-card-border: #374151;
+            --color-price-tag-bg: #374151;
+            --color-price-tag-text: #E5E7EB;
+            --color-tab-bg: #374151;
+            --color-tab-text: #D1D5DB;
+            --color-tab-active-bg: #4F46E5;
+            --color-tab-active-text: #FFFFFF;
+            --color-sticky-header-bg: rgba(17, 24, 39, 0.8);
+        }
+
+        /* Applying variables */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text-primary);
+        }
+        .header-title { color: var(--color-text-header); }
+        .header-subtitle { color: var(--color-text-secondary); }
+        .card {
+            background-color: var(--color-card-bg);
+            border: 1px solid var(--color-card-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.1), 0 4px 6px -2px rgba(79, 70, 229, 0.05);
+            border-color: #4F46E5;
+        }
+        .card-title { color: var(--color-text-header); border-bottom-color: var(--color-card-border); }
+        .price-tag {
+            background-color: var(--color-price-tag-bg);
+            color: var(--color-price-tag-text);
+        }
+        .sticky-header {
+            background-color: var(--color-sticky-header-bg);
+        }
+        .horizontal-scroll-container {
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .horizontal-scroll-container::-webkit-scrollbar { display: none; }
+        .category-tab {
+            transition: background-color 0.3s, color 0.3s;
+            white-space: nowrap;
+            background-color: var(--color-tab-bg);
+            color: var(--color-tab-text);
+        }
+        .category-tab.active-tab {
+            background-color: var(--color-tab-active-bg);
+            color: var(--color-tab-active-text);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Class to apply animation */
+        .card.animated {
+            opacity: 0; 
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <div class="container mx-auto max-w-7xl">
+        <!-- Header -->
+        <header class="relative text-center my-8 md:my-12 px-4">
+            
+            <!-- Brand Logo -->
+            <div class="w-20 h-20 mx-auto mb-5 flex items-center justify-center rounded-full overflow-hidden bg-gray-700">
+                <img src="image/profil-noname.jpg" alt="Logo Brand" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/80x80/1F2937/FFFFFF?text=Logo';">
+            </div>
+            
+            <h1 class="header-title text-3xl md:text-4xl font-bold tracking-tight">KATALOG NO NAME</h1>
+            <p class="header-subtitle mt-3 text-base">Tanyakan stok terlebih dahulu sebelum order</p>
+            
+            <!-- Action Buttons -->
+            <div class="mt-6 flex justify-center items-center">
+                <a href="https://t.me/nonmstrq" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-5 text-sm rounded-lg hover:bg-indigo-700 transition-colors duration-300 shadow-lg shadow-indigo-500/30">
+                    Hubungi Admin
+                </a>
+                <!-- Tombol Join Channel Telegram -->
+                <a href="https://t.me/nonmstr" target="_blank" rel="noopener noreferrer" class="ml-3 inline-flex items-center bg-transparent border border-indigo-500 text-indigo-400 font-semibold py-2 px-5 text-sm rounded-lg hover:bg-indigo-500 hover:text-white transition-colors duration-300 shadow-lg shadow-indigo-500/10">
+                    <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.57c-.28 1.1-.86 1.32-1.7.82l-4.7-3.41-2.27 2.22c-.2.2-.37.37-.74.37l.28-4.23z"></path>
+                    </svg>
+                    <span>Join Channel</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Category Tabs (Horizontal Scroll) -->
+        <div class="sticky-header sticky top-0 backdrop-blur-sm z-10 py-3">
+             <div id="category-tabs" class="horizontal-scroll-container">
+                <div class="inline-flex space-x-3 px-4">
+                    <!-- Tabs will be generated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+       
+        <!-- Pricelist Content (Vertical Scroll) -->
+        <main id="pricelist-content-area" class="p-4 flex-grow">
+            <!-- Content will be generated here by JavaScript -->
+        </main>
+    </div>
+
+    <script>
+        const pricelistData = {
+            "STREAMING APPS": [
+                { name: "Viu Private Anti Limit", items: [ { term: "1 bulan", price: 4000 }, { term: "2 bulan", price: 5000 }, { term: "3 bulan", price: 6000 }, { term: "4 bulan", price: 7000 }, { term: "5 bulan", price: 8000 }, { term: "6 bulan", price: 9000 }, { term: "1 tahun", price: 12000 }, ] },
+                { name: "Youku", items: [ { term: "1 bulan", price: 5000 }, { term: "3 bulan", price: 7000 }, { term: "1 tahun", price: 10000 } ] },
+                { name: "Prime Video", items: [ { term: "1 bulan sharing", price: 6000 }, { term: "1 bulan private", price: 12000 } ] },
+                { name: "Bstation", items: [ { term: "1 bulan", price: 5000 }, { term: "3 bulan", price: 7000 }, { term: "1 tahun", price: 10000 } ] },
+                { name: "Catchplay+", items: [ { term: "1 bulan", price: 7000 }, { term: "3 bulan", price: 9000 } ] },
+                { name: "Drakor Id", items: [ { term: "1 tahun", price: 10000 } ] },
+                { name: "Youtube Famplan", items: [ { term: "1 bulan", price: 3500 }, { term: "2 bulan", price: 5000 } ] },
+                { name: "Youtube Indplan", items: [ { term: "1 bulan acc customer", price: 6000 }, { term: "1 bulan acc seller", price: 8000 } ] },
+                { name: "Youtube Mixplan", items: [ { term: "3 bulan acc customer", price: 8000 }, { term: "3 bulan acc seller", price: 10000 } ] }
+            ],
+            "EDITING APPS": [
+                { name: "Canva Member + Designer", items: [ { term: "1 bulan", price: 3000 }, { term: "2 bulan", price: 4000 }, { term: "3 bulan", price: 5000 }, { term: "4 bulan", price: 6000 }, { term: "5 bulan", price: 7000 }, { term: "6 bulan", price: 7500, note: "garansi 5 bulan" }, { term: "1 tahun", price: 8000, note: "garansi 6 bulan" }, ] },
+                { name: "Canva Edu/Lifetime", items: [ { term: "lifetime", price: 7000, note: "garansi 6 bulan" }, { term: "lifetime", price: 12000, note: "garansi 1 tahun" } ] },
+                { name: "Canva Head", items: [ { term: "1 Bulan", price: 7000 }, { term: "2 Bulan", price: 10000 } ] },
+                { name: "Capcut", items: [ { term: "private 7d", price: 7000 }, { term: "sharing 1b", price: 12000 } ] },
+                { name: "Capcut Private 1b", items: [ { term: "promo", price: 17000 } ] },
+                { name: "Alight Motion Sharing", items: [ { term: "1 tahun", price: 5000 } ] },
+                { name: "Alight Motion Private", items: [ { term: "1 tahun", price: 7000 } ] },
+                { name: "Vsco Plus (Andro)", items: [ { term: "1 tahun", price: 10000 } ] },
+                { name: "Lightroom", items: [ { term: "1 tahun", price: 10000 } ] },
+                { name: "Picsart Pro", items: [ { term: "1 bulan sharing", price: 4000 }, { term: "1 bulan private", price: 6000 } ] },
+                { name: "Ibis Paint X (Andro)", items: [ { term: "1 tahun", price: 10000 } ] },
+            ],
+            "OTHERS": [
+                { name: "CamScanner", items: [ { term: "1 tahun", price: 10000 } ] },
+                { name: "Chatgpt+", items: [ { term: "1 bulan 8u", price: 22000 }, { term: "3 bulan 8u", price: 52000 } ] },
+                { name: "Spotify Student", items: [ { term: "1 bulan", price: 11000, note: "no garansi" } ] },
+                { name: "Zoom", items: [ { term: "7 hari", price: 5500 }, { term: "14 hari", price: 7000 } ] },
+                { name: "Express VPN", items: [ { term: "7 hari", price: 5000 } ] },
+                { name: "HMA VPN", items: [ { term: "7 hari", price: 5000 } ] },
+                { name: "Robux", items: [ { term: "50 robux", price: 13000 }, { term: "100 robux", price: 17000 }, { term: "150 robux", price: 25000 }, { term: "200 robux", price: 31000 }, { term: "250 robux", price: 37000 }, { term: "300 robux", price: 43000 }, { term: "350 robux", price: 49000 }, { term: "400 robux", price: 55000 }, ] }
+            ],
+            "UP SOSMED": [
+                { name: "Instagram Followers (Real Indo)", items: [ { term: "100 followers", price: "soon" }, { term: "200 followers", price: "soon" }, { term: "300 followers", price: "soon" }, { term: "400 followers", price: "soon" }, { term: "500 followers", price: "soon" }, { term: "600 followers", price: "soon" }, { term: "700 followers", price: "soon" }, { term: "800 followers", price: "soon" }, { term: "900 followers", price: "soon" }, { term: "1000 followers", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "Instagram Followers (Bule Aktif)", items: [ { term: "100 followers", price: "soon" }, { term: "200 followers", price: "soon" }, { term: "300 followers", price: "soon" }, { term: "400 followers", price: "soon" }, { term: "500 followers", price: "soon" }, { term: "600 followers", price: "soon" }, { term: "700 followers", price: "soon" }, { term: "800 followers", price: "soon" }, { term: "900 followers", price: "soon" }, { term: "1000 followers", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "Instagram Likes", items: [ { term: "100 likes", price: "soon" }, { term: "200 likes", price: "soon" }, { term: "300 likes", price: "soon" }, { term: "400 likes", price: "soon" }, { term: "500 likes", price: "soon" }, { term: "600 likes", price: "soon" }, { term: "700 likes", price: "soon" }, { term: "800 likes", price: "soon" }, { term: "900 likes", price: "soon" }, { term: "1000 likes", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "Instagram Views (Reels)", items: [ { term: "100 views", price: "soon" }, { term: "200 views", price: "soon" }, { term: "300 views", price: "soon" }, { term: "400 views", price: "soon" }, { term: "500 views", price: "soon" }, { term: "600 views", price: "soon" }, { term: "700 views", price: "soon" }, { term: "800 views", price: "soon" }, { term: "900 views", price: "soon" }, { term: "1000 views", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "TikTok Followers", items: [ { term: "100 followers", price: "soon" }, { term: "200 followers", price: "soon" }, { term: "300 followers", price: "soon" }, { term: "400 followers", price: "soon" }, { term: "500 followers", price: "soon" }, { term: "600 followers", price: "soon" }, { term: "700 followers", price: "soon" }, { term: "800 followers", price: "soon" }, { term: "900 followers", price: "soon" }, { term: "1000 followers", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "TikTok Likes", items: [ { term: "100 likes", price: "soon" }, { term: "200 likes", price: "soon" }, { term: "300 likes", price: "soon" }, { term: "400 likes", price: "soon" }, { term: "500 likes", price: "soon" }, { term: "600 likes", price: "soon" }, { term: "700 likes", price: "soon" }, { term: "800 likes", price: "soon" }, { term: "900 likes", price: "soon" }, { term: "1000 likes", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "TikTok Views", items: [ { term: "100 views", price: "soon" }, { term: "200 views", price: "soon" }, { term: "300 views", price: "soon" }, { term: "400 views", price: "soon" }, { term: "500 views", price: "soon" }, { term: "600 views", price: "soon" }, { term: "700 views", price: "soon" }, { term: "800 views", price: "soon" }, { term: "900 views", price: "soon" }, { term: "1000 views", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "TikTok Saved", items: [ { term: "100 saves", price: "soon" }, { term: "200 saves", price: "soon" }, { term: "300 saves", price: "soon" }, { term: "400 saves", price: "soon" }, { term: "500 saves", price: "soon" }, { term: "600 saves", price: "soon" }, { term: "700 saves", price: "soon" }, { term: "800 saves", price: "soon" }, { term: "900 saves", price: "soon" }, { term: "1000 saves", price: "soon", note: "Berlaku kelipatan" } ] },
+                { name: "Coming Soon", items: [ { term: "Layanan lainnya", price: "soon" } ] }
+            ],
+            "JOKI MATEMATIKA": [
+                { name: "Tugas Matematika SD", items: [ { term: "Per Soal", price: 1000 } ] },
+                { name: "Tugas Matematika SMP", items: [ { term: "Per Soal", price: 2000 } ] },
+                { name: "Tugas Matematika SMA", items: [ { term: "Per Soal", price: 2000 } ] }
+            ]
+        };
+
+        const tabsContainer = document.querySelector("#category-tabs .inline-flex");
+        const contentArea = document.getElementById("pricelist-content-area");
+
+        function formatRupiah(number) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency', currency: 'IDR', minimumFractionDigits: 0
+            }).format(number).replace(/\s/g, '');
+        }
+        
+        function displayCategoryContent(categoryName) {
+            contentArea.innerHTML = ''; // Clear previous content
+            const apps = pricelistData[categoryName];
+            const grid = document.createElement('div');
+            grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6";
+            
+            apps.forEach((app, index) => {
+                const card = document.createElement('div');
+                card.className = "card animated rounded-xl p-5 flex flex-col";
+                card.style.animationDelay = `${index * 50}ms`;
+
+                let itemsHtml = app.items.map(item => {
+                    const priceDisplay = typeof item.price === 'number' ? formatRupiah(item.price) : item.price;
+                    const priceTagClass = typeof item.price === 'number' 
+                        ? 'price-tag font-semibold text-xs py-1 px-2.5 rounded-full' 
+                        : 'price-tag font-normal uppercase tracking-wider text-xs py-1 px-2.5 rounded-full bg-yellow-500/10 text-yellow-400';
+
+                    return `
+                        <li class="flex justify-between items-center py-2">
+                            <span class="text-sm">${item.term}${item.note ? ` <em class="text-xs text-gray-500">(${item.note})</em>` : ''}</span>
+                            <span class="${priceTagClass}">${priceDisplay}</span>
+                        </li>
+                    `;
+                }).join('');
+
+                card.innerHTML = `
+                    <h3 class="card-title text-base font-semibold text-center pb-2 mb-2 border-b">${app.name}</h3>
+                    <ul class="flex-grow">${itemsHtml}</ul>
+                    <div class="mt-4">
+                        <a href="https://t.me/nonmstrq_bot" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 text-white font-semibold py-2 text-sm rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+                            Order Sekarang
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            contentArea.appendChild(grid);
+        }
+
+        function setupTabs() {
+            const categories = Object.keys(pricelistData);
+            categories.forEach((category, index) => {
+                const tab = document.createElement('button');
+                tab.className = "category-tab py-2 px-4 text-sm font-semibold rounded-lg";
+                tab.textContent = category;
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active-tab'));
+                    tab.classList.add('active-tab');
+                    displayCategoryContent(category);
+                });
+                if (index === 0) { tab.classList.add('active-tab'); }
+                tabsContainer.appendChild(tab);
+            });
+            if (categories.length > 0) { displayCategoryContent(categories[0]); }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupTabs();
+        });
+    </script>
+</body>
+</html>
+
